@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DKS Currency Conversion</string>
+    <string name="from">Amount</string>
+    <string name="typeAValue">Type a value</string>
+    <string name="PickACurrencyToConvert">Please pick a currency to convert</string>
+    <string name="to">To</string>
+</resources>
