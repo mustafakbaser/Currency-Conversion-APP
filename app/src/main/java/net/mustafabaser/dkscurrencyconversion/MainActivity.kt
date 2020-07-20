@@ -1,5 +1,6 @@
 package net.mustafabaser.dkscurrencyconversion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -118,7 +119,6 @@ class MainActivity : AppCompatActivity() {
 
         spinner.onItemSelectedListener = (object : OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
             }
 
             override fun onItemSelected(
@@ -134,7 +134,6 @@ class MainActivity : AppCompatActivity() {
 
         spinner2.onItemSelectedListener = (object : OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
             }
 
             override fun onItemSelected(
@@ -147,5 +146,10 @@ class MainActivity : AppCompatActivity() {
                 getApiResult()
             }
         })
+    }
+
+    fun descriptionaGecis(view: View) {
+        val intent = Intent(this, DescriptionActivity::class.java)
+        startActivity(intent)
     }
 }

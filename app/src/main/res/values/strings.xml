@@ -4,6 +4,7 @@
     <string name="typeAValue">Bir değer girin</string>
     <string name="PickACurrencyToConvert">Lütfen dönüştürmek için bir para birimi seçin</string>
     <string name="to">Şuna Çevir</string>
+    <string name="paraBirimleri">Para Birimleri</string>
 
     <string-array name="currencies">
         <item>EUR</item>

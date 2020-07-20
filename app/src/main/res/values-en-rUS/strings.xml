@@ -5,4 +5,5 @@
     <string name="typeAValue">Type a value</string>
     <string name="PickACurrencyToConvert">Please pick a currency to convert</string>
     <string name="to">To</string>
+    <string name="paraBirimleri">Currencies</string>
 </resources>
