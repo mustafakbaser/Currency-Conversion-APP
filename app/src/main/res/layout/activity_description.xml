@@ -23,6 +23,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="EUR - Euro"
+                android:drawableLeft="@drawable/euro"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -30,6 +33,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="USD - Amerikan Doları"
+                android:drawableLeft="@drawable/dolar"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -37,6 +43,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="GBP - Sterlin"
+                android:drawableLeft="@drawable/sterlin"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -44,6 +53,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TRY - Türk Lirası"
+                android:drawableLeft="@drawable/turkiye"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -51,6 +63,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="JPY - Japon Yeni"
+                android:drawableLeft="@drawable/japonya"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -58,6 +73,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="CHF - İsviçre Frangı"
+                android:drawableLeft="@drawable/isvicre"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -65,20 +83,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="CNY - Çin Yuanı"
+                android:drawableLeft="@drawable/dolar"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="NOK - Norveç Kronu"
-                android:textColor="#000000" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DKK - Danimarka Kronu"
+                android:drawableLeft="@drawable/danimarka"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -86,6 +104,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="AUD - Avustralya Doları"
+                android:drawableLeft="@drawable/avustralya"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -93,6 +114,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="CAD - Kanada Doları"
+                android:drawableLeft="@drawable/kanada"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -100,83 +124,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SEK - İsveç Kronu"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RUB - Rus Rublesi"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="HKD - Hong Kong Doları"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IDR - Endonezya Rupisi"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ILS - İsrail Yeni Şekeli"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="INR - Hindistan Rupisi"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MXN - Meksika Pezosu"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CZK - Çek Korunası"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SGD - Singapur Doları"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="THB - Tayland Bahtı"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="HRK - Hırvat Kunası"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MYR - Malezya Ringiti"
+                android:drawableLeft="@drawable/isvec"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -184,13 +134,130 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="NOK - Norveç Kronu"
+                android:drawableLeft="@drawable/norvec"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUB - Rus Rublesi"
+                android:drawableLeft="@drawable/rusya"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HKD - Hong Kong Doları"
+                android:drawableLeft="@drawable/honk_kong"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDR - Endonezya Rupisi"
+                android:drawableLeft="@drawable/endonezya"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ILS - İsrail Yeni Şekeli"
+                android:drawableLeft="@drawable/israil"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR - Hindistan Rupisi"
+                android:drawableLeft="@drawable/hindistan"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MXN - Meksika Pezosu"
+                android:drawableLeft="@drawable/meksika"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CZK - Çek Korunası"
+                android:drawableLeft="@drawable/cek_cumhuriyeti"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SGD - Singapur Doları"
+                android:drawableLeft="@drawable/singapur"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THB - Tayland Bahtı"
+                android:drawableLeft="@drawable/tayland"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HRK - Hırvat Kunası"
+                android:drawableLeft="@drawable/hindistan"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MYR - Malezya Ringiti"
+                android:drawableLeft="@drawable/malezya"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#000000" />
+
 
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="BGN - Bulgar Levası"
+                android:drawableLeft="@drawable/bulgaristan"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -198,6 +265,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="PHP - Filipinler Pezosu"
+                android:drawableLeft="@drawable/filipinler"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -205,6 +275,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="PLN - Polonya Zlotisi"
+                android:drawableLeft="@drawable/polonya"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -212,6 +285,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ZAR - Güney Afrika Randı"
+                android:drawableLeft="@drawable/guney_afrika"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -219,6 +295,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ISK - İzlanda Kronu"
+                android:drawableLeft="@drawable/izlanda"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -226,6 +305,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="BRL - Brazilya Reali"
+                android:drawableLeft="@drawable/brezilya"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -233,6 +315,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="RON - Romen Leyi"
+                android:drawableLeft="@drawable/romanya"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -240,6 +325,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="NZD - Yeni Zelanda Doları"
+                android:drawableLeft="@drawable/yeni_zelanda"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
 
             <TextView
@@ -247,6 +335,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="KRW - Güney Kore Wonu"
+                android:drawableLeft="@drawable/guney_kore"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#101010" />
 
             <TextView
@@ -254,6 +345,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="HUF - Macar Forinti"
+                android:drawableLeft="@drawable/macaristan"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#000000" />
         </LinearLayout>
     </ScrollView>
