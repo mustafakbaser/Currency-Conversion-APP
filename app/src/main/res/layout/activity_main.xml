@@ -11,8 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="5dp">
 
         <LinearLayout
             android:id="@+id/ll_parent"
@@ -30,6 +33,11 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
+                <Spinner
+                    android:id="@+id/spinner_firstConversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
                 <EditText
                     android:id="@+id/et_firstConversion"
                     android:layout_width="wrap_content"
@@ -38,12 +46,13 @@
                     android:hint="@string/from"
                     android:inputType="number" />
 
-                <Spinner
-                    android:id="@+id/spinner_firstConversion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
             </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
 
             <LinearLayout
                 android:id="@+id/ll_secondConversion"
@@ -52,6 +61,11 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
+                <Spinner
+                    android:id="@+id/spinner_secondConversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
                 <EditText
                     android:id="@+id/et_secondConversion"
                     android:layout_width="wrap_content"
@@ -59,11 +73,6 @@
                     android:ems="5"
                     android:hint="@string/to"
                     android:inputType="number" />
-
-                <Spinner
-                    android:id="@+id/spinner_secondConversion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -83,8 +92,8 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="156dp"
-        android:onClick="descriptionaGecis"
-        android:text="Bu Para Birimleri Ne Anlama Geliyor?"
+        android:onClick="intentDescription"
+        android:text="@string/ParaBirimleri"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 

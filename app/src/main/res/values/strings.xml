@@ -1,10 +1,44 @@
 <resources>
-    <string name="app_name">DKS Döviz Çevirici</string>
+    <string name="app_name">Basit Döviz Çevirici</string>
     <string name="from">Miktar</string>
     <string name="typeAValue">Bir değer girin</string>
     <string name="PickACurrencyToConvert">Lütfen dönüştürmek için bir para birimi seçin</string>
     <string name="to">Şuna Çevir</string>
     <string name="paraBirimleri">Para Birimleri</string>
+    <string name="ParaBirimleri">Bu Para Birimleri Ne Anlama Geliyor?</string>
+    <string name="eur_euro">EUR - Euro</string>
+    <string name="usd_amerikan_dolar">USD - Amerikan Doları</string>
+    <string name="gbp_sterlin">GBP - Sterlin (Pound)</string>
+    <string name="try_turkish_lira">TRY - Türk Lirası</string>
+    <string name="jpy_japon_yeni">JPY - Japon Yeni</string>
+    <string name="chf_isvicre_frangi">CHF - İsviçre Frangı</string>
+    <string name="cny_cin_yuani">CNY - Çin Yuanı</string>
+    <string name="dkk_danimarka_kronu">DKK - Danimarka Kronu</string>
+    <string name="aud_avustralya_dolari">AUD - Avustralya Doları</string>
+    <string name="cad_kanada_dolari">CAD - Kanada Doları</string>
+    <string name="sek_isvec_kronu">SEK - İsveç Kronu</string>
+    <string name="nok_norvec_kronu">NOK - Norveç Kronu</string>
+    <string name="rub_rus_rublesi">RUB - Rus Rublesi</string>
+    <string name="hkd_hong_kong_dolar">HKD - Hong Kong Doları</string>
+    <string name="idr_endonezya_rupisi">IDR - Endonezya Rupisi</string>
+    <string name="ils_israil_yeni_sekeli">ILS - İsrail Yeni Şekeli</string>
+    <string name="inr_hindistan_rupisi">INR - Hindistan Rupisi</string>
+    <string name="mxn_meksika_pezosu">MXN - Meksika Pezosu</string>
+    <string name="czk_cek_korunasi">CZK - Çek Korunası</string>
+    <string name="sgd_singapur_dolari">SGD - Singapur Doları</string>
+    <string name="thb_tayland_bahti">THB - Tayland Bahtı</string>
+    <string name="hrk_hirvat_kunasi">HRK - Hırvat Kunası</string>
+    <string name="myr_malezya_ringiti">MYR - Malezya Ringiti</string>
+    <string name="bgn_bulgar_levasi">BGN - Bulgar Levası</string>
+    <string name="php_filipinler_pezosu">PHP - Filipinler Pezosu</string>
+    <string name="pln_polonya_zlotisi">PLN - Polonya Zlotisi</string>
+    <string name="zar_guney_afrika_randi">ZAR - Güney Afrika Randı</string>
+    <string name="isk_izlanda_kronu">ISK - İzlanda Kronu</string>
+    <string name="brl_brazilya_reali">BRL - Brezilya Reali</string>
+    <string name="ron_romen_leyi">RON - Romen Leyi</string>
+    <string name="nzd_yeni_zelanda_dolari">NZD - Yeni Zelanda Doları</string>
+    <string name="krw_guney_kore_wonu">KRW - Güney Kore Wonu</string>
+    <string name="huf_macar_forinti">HUF - Macar Forinti</string>
 
     <string-array name="currencies">
         <item>EUR</item>

@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun descriptionaGecis(view: View) {
+    fun intentDescription(view: View) {
         val intent = Intent(this, DescriptionActivity::class.java)
         startActivity(intent)
     }

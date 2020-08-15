@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DKS Currency Conversion</string>
+    <string name="app_name">Simple Currency Converter</string>
     <string name="from">Amount</string>
     <string name="typeAValue">Type a value</string>
     <string name="PickACurrencyToConvert">Please pick a currency to convert</string>
     <string name="to">To</string>
     <string name="paraBirimleri">Currencies</string>
+    <string name="ParaBirimleri">What Do These Currency Abbreviations Mean?</string>
+    <string name="huf_macar_forinti">HUF - Hungarian Forint</string>
+    <string name="krw_guney_kore_wonu">KRW - South Korean Won</string>
+    <string name="nzd_yeni_zelanda_dolari">NZD - New Aealand Dollar</string>
+    <string name="ron_romen_leyi">RON - Romanian Leu</string>
+    <string name="brl_brazilya_reali">BRL - Brazilian Real</string>
+    <string name="isk_izlanda_kronu">ISK - Icelandic Krona</string>
+    <string name="zar_guney_afrika_randi">ZAR - South African Rand</string>
+    <string name="pln_polonya_zlotisi">PLN - Polish Zloty</string>
+    <string name="php_filipinler_pezosu">PHP - Philippine Peso</string>
+    <string name="bgn_bulgar_levasi">BGN - Bulgarian Lev</string>
+    <string name="myr_malezya_ringiti">MYR - Malaysian Ringgit</string>
+    <string name="hrk_hirvat_kunasi">HRK - Croatian Kuna</string>
+    <string name="thb_tayland_bahti">THB - Thai Baht</string>
+    <string name="sgd_singapur_dolari">SGD - Singapore Dollar</string>
+    <string name="czk_cek_korunasi">CZK - Czech Koruna</string>
+    <string name="mxn_meksika_pezosu">MXN - Mexican Peso</string>
+    <string name="inr_hindistan_rupisi">INR - Indian Rupee</string>
+    <string name="ils_israil_yeni_sekeli">ILS - Israeli Shekel</string>
+    <string name="idr_endonezya_rupisi">IDR - Indonesian Rupiah</string>
+    <string name="hkd_hong_kong_dolar">HKD - Hong Kong Dollar</string>
+    <string name="rub_rus_rublesi">RUB - Russian Ruble</string>
+    <string name="nok_norvec_kronu">NOK - Norwegian Krone</string>
+    <string name="sek_isvec_kronu">SEK - Swedish Krona</string>
+    <string name="cad_kanada_dolari">CAD - Canadian Dollar</string>
+    <string name="aud_avustralya_dolari">AUD - Australian Dollar</string>
+    <string name="dkk_danimarka_kronu">DKK - Danish Krone</string>
+    <string name="cny_cin_yuani">CNY - Chinese Yuan Renminbi</string>
+    <string name="chf_isvicre_frangi">CHF - Swiss Franc</string>
+    <string name="jpy_japon_yeni">JPY - Japanese Yen</string>
+    <string name="try_turkish_lira">TRY - Turkish Lira</string>
+    <string name="gbp_sterlin">GBP - British Pound</string>
+    <string name="usd_amerikan_dolar">USD - US Dollar</string>
+    <string name="eur_euro">EUR - Euro</string>
 </resources>
