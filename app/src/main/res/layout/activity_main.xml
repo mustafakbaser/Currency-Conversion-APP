@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="20dp"
@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:id="@+id/ll_parent"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_margin="30dp"
@@ -28,23 +28,21 @@
 
             <LinearLayout
                 android:id="@+id/ll_firstConversion"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Spinner
-                    android:id="@+id/spinner_firstConversion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
                 <EditText
                     android:id="@+id/et_firstConversion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="5"
+                    android:drawableStart="@drawable/ic_left_arrow"
                     android:hint="@string/from"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:background="@null"
+                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -55,46 +53,63 @@
                 android:layout_centerVertical="true" />
 
             <LinearLayout
-                android:id="@+id/ll_secondConversion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_firstConversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/arrows" />
 
                 <Spinner
                     android:id="@+id/spinner_secondConversion"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="match_parent"
+                    android:dropDownWidth="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_secondConversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/et_secondConversion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_right_arrow"
                     android:ems="5"
-                    android:hint="@string/to"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:textAlignment="center" />
 
             </LinearLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/descriptionaGecis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="156dp"
-        android:onClick="intentDescription"
-        android:text="@string/ParaBirimleri"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </RelativeLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Simple Currency Converter</string>
-    <string name="from">Amount</string>
+    <string name="from">Enter Amount to Convert</string>
     <string name="typeAValue">Type a value</string>
     <string name="PickACurrencyToConvert">Please pick a currency to convert</string>
-    <string name="to">To</string>
+    <string name="to">Equivalent of the currency</string>
     <string name="paraBirimleri">Currencies</string>
     <string name="ParaBirimleri">What Do These Currency Abbreviations Mean?</string>
     <string name="huf_macar_forinti">HUF - Hungarian Forint</string>

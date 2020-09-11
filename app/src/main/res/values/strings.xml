@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Basit Döviz Çevirici</string>
-    <string name="from">Miktar</string>
+    <string name="from">Dönüştürülecek Miktarını Girin</string>
     <string name="typeAValue">Bir değer girin</string>
     <string name="PickACurrencyToConvert">Lütfen dönüştürmek için bir para birimi seçin</string>
-    <string name="to">Şuna Çevir</string>
+    <string name="to">Dövizin karşılığı</string>
     <string name="paraBirimleri">Para Birimleri</string>
     <string name="ParaBirimleri">Bu Para Birimleri Ne Anlama Geliyor?</string>
     <string name="eur_euro">EUR - Euro</string>
