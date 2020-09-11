@@ -40,4 +40,6 @@
     <string name="gbp_sterlin">GBP - British Pound</string>
     <string name="usd_amerikan_dolar">USD - US Dollar</string>
     <string name="eur_euro">EUR - Euro</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
 </resources>

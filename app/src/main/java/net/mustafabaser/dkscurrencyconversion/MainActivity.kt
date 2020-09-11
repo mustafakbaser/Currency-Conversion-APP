@@ -1,7 +1,6 @@
 package net.mustafabaser.dkscurrencyconversion
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -11,15 +10,13 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
-import androidx.core.widget.doOnTextChanged
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
-import org.w3c.dom.Text
-import java.lang.Exception
 import java.net.URL
 
 class MainActivity : AppCompatActivity() {
@@ -28,15 +25,13 @@ class MainActivity : AppCompatActivity() {
     var convertedToCurrency = "USD"
     var conversionRate = 0f
 
-    //val firstCurrency = spinner.selectedItem.toString()
-    //val secondCurrency = spinner2.selectedItem.toString()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         spinnerSetup()
         textChangedStuff()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -107,6 +102,9 @@ class MainActivity : AppCompatActivity() {
                                 ((et_firstConversion.text.toString()
                                     .toFloat()) * conversionRate).toString()
                             et_secondConversion?.setText(text)
+                            // İlk seçildiğinde para birimlerini güncelleme
+                            upTextBox?.setText(baseCurrency)
+                            downTextBox?.setText(convertedToCurrency)
                         }
 
                     } catch (e: Exception) {
@@ -174,6 +172,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun intentDescription(view: View) {
-
+        val intent = Intent(this, DescriptionActivity::class.java)
+        startActivity(intent)
     }
 }

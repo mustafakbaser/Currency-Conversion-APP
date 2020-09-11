@@ -39,6 +39,8 @@
     <string name="nzd_yeni_zelanda_dolari">NZD - Yeni Zelanda Doları</string>
     <string name="krw_guney_kore_wonu">KRW - Güney Kore Wonu</string>
     <string name="huf_macar_forinti">HUF - Macar Forinti</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
 
     <string-array name="currencies">
         <item>EUR</item>
