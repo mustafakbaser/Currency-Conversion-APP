@@ -175,4 +175,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, DescriptionActivity::class.java)
         startActivity(intent)
     }
+
+    fun toastMessage(view: View) {
+        Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG).show()
+    }
 }

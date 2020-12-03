@@ -41,6 +41,7 @@
     <string name="huf_macar_forinti">HUF - Macar Forinti</string>
     <string name="usd">USD</string>
     <string name="eur">EUR</string>
+    <string name="resultCalculation">Dönüştürmek istediğiniz miktarın ikinci para biriminde karşılığıdır.</string>
 
     <string-array name="currencies">
         <item>EUR</item>

@@ -9,7 +9,7 @@
     <string name="ParaBirimleri">What Do These Currency Abbreviations Mean?</string>
     <string name="huf_macar_forinti">HUF - Hungarian Forint</string>
     <string name="krw_guney_kore_wonu">KRW - South Korean Won</string>
-    <string name="nzd_yeni_zelanda_dolari">NZD - New Aealand Dollar</string>
+    <string name="nzd_yeni_zelanda_dolari">NZD - New Zealand Dollar</string>
     <string name="ron_romen_leyi">RON - Romanian Leu</string>
     <string name="brl_brazilya_reali">BRL - Brazilian Real</string>
     <string name="isk_izlanda_kronu">ISK - Icelandic Krona</string>
@@ -42,4 +42,5 @@
     <string name="eur_euro">EUR - Euro</string>
     <string name="usd">USD</string>
     <string name="eur">EUR</string>
+    <string name="resultCalculation">This is the equivalent of the amount you want to convert in second currency.</string>
 </resources>
