@@ -177,6 +177,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun toastMessage(view: View) {
-        Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG).show()
+        Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG)
+            .show()
     }
 }
