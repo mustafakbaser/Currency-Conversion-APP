@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:title="Currencies"
-        android:icon="@drawable/ic_bookmarks"
+        android:icon="@drawable/ic_calculate"
         app:showAsAction="ifRoom"
         android:id="@+id/descriptionButton"/>
 

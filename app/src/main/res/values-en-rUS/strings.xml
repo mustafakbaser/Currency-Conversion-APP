@@ -43,4 +43,24 @@
     <string name="usd">USD</string>
     <string name="eur">EUR</string>
     <string name="resultCalculation">This is the equivalent of the amount you want to convert in second currency.</string>
+    <string name="hesapMakinesi_esittir">=</string>
+    <string name="hesapMakinesi">Calculator</string>
+    <string name="hesapMakinesi_0">0</string>
+    <string name="hesapMakinesi_kusurat">.</string>
+    <string name="hesapMakinesi_toplama">+</string>
+    <string name="hesapMakinesi_3">3</string>
+    <string name="hesapMakinesi_2">2</string>
+    <string name="hesapMakinesi_1">1</string>
+    <string name="hesapMakinesi_cikarma">-</string>
+    <string name="hesapMakinesi_6">6</string>
+    <string name="hesapMakinesi_5">5</string>
+    <string name="hesapMakinesi_4">4</string>
+    <string name="hesapMakinesi_carpma">*</string>
+    <string name="hesapMakinesi_9">9</string>
+    <string name="hesapMakinesi_8">8</string>
+    <string name="hesapMakinesi_7">7</string>
+    <string name="hesapMakinesi_bolme">/</string>
+    <string name="hesapMakinesi_kapaParantez">)</string>
+    <string name="hesapMakinesi_acParantez">(</string>
+    <string name="hesapMakinesi_temizle">CE</string>
 </resources>
