@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     var convertedToCurrency = "USD"
     var conversionRate = 0f
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -171,10 +172,6 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun intentDescription(view: View) {
-        val intent = Intent(this, DescriptionActivity::class.java)
-        startActivity(intent)
-    }
 
     fun toastMessage(view: View) {
         Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG)
