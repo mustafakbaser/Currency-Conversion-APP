@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Basit Döviz Çevirici</string>
-    <string name="from">Dönüştürülecek Miktarını Girin</string>
+    <string name="from">döviz miktarı girin</string>
     <string name="typeAValue">Bir değer girin</string>
     <string name="PickACurrencyToConvert">Lütfen dönüştürmek için bir para birimi seçin</string>
     <string name="to">Dövizin karşılığı</string>

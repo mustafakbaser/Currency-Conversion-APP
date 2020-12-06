@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Simple Currency Converter</string>
-    <string name="from">Enter Amount to Convert</string>
+    <string name="from">enter amount to convert</string>
     <string name="typeAValue">Type a value</string>
     <string name="PickACurrencyToConvert">Please pick a currency to convert</string>
     <string name="to">Equivalent of the currency</string>
