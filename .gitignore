@@ -12,4 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+
+# Keystore files
+*.jks
 *.keystore
