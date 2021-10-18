@@ -76,8 +76,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun getApiResult() {
         if (et_firstConversion != null && et_firstConversion.text.isNotEmpty() && et_firstConversion.text.isNotBlank()) {
+            //API Document: https://www.frankfurter.app/docs/
             var API =
-                "https://api.ratesapi.io/api/latest?base=$baseCurrency&symbols=$convertedToCurrency"
+                "https://api.frankfurter.app/latest?amount=1&from=$baseCurrency&to=$convertedToCurrency"
 
             if (baseCurrency == convertedToCurrency) {
                 Toast.makeText(
