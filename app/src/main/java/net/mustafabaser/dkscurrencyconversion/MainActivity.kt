@@ -29,10 +29,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         spinnerSetup()
         textChangedStuff()
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -104,9 +102,9 @@ class MainActivity : AppCompatActivity() {
                                 ((et_firstConversion.text.toString()
                                     .toFloat()) * conversionRate).toString()
                             et_secondConversion?.setText(text)
-                            // İlk seçildiğinde para birimlerini güncelleme
+                            /* Spinnerda seçilen para birimini getirme
                             upTextBox?.setText(baseCurrency)
-                            downTextBox?.setText(convertedToCurrency)
+                            downTextBox?.setText(convertedToCurrency)*/
                         }
 
                     } catch (e: Exception) {
@@ -128,7 +126,6 @@ class MainActivity : AppCompatActivity() {
             android.R.layout.simple_spinner_item
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
             spinner.adapter = adapter
         }
 
@@ -138,7 +135,6 @@ class MainActivity : AppCompatActivity() {
             android.R.layout.simple_spinner_item
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
             spinner2.adapter = adapter
         }
 
@@ -172,7 +168,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
-
 
     fun toastMessage(view: View) {
         Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG)

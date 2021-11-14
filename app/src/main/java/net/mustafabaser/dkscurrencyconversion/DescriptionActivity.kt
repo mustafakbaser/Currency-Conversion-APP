@@ -16,7 +16,6 @@ class DescriptionActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         //Rakamlar
-
         bir.setOnClickListener { expression("1", true) }
         iki.setOnClickListener { expression("2", true) }
         uc.setOnClickListener { expression("3", true) }

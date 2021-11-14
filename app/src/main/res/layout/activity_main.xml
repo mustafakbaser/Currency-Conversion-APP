@@ -37,13 +37,11 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/upTextBox"
+                <Spinner
+                    android:id="@+id/spinner_firstConversion"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:text="@string/eur" />
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog" />
 
                 <EditText
                     android:id="@+id/et_firstConversion"
@@ -66,30 +64,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Spinner
-                    android:id="@+id/spinner_firstConversion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:spinnerMode="dialog" />
-
-                <ImageView
-                    android:id="@+id/arrows"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_to"
-                    android:backgroundTint="@android:color/black"/>
-
-                <Spinner
-                    android:id="@+id/spinner_secondConversion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:dropDownWidth="wrap_content"
-                    android:spinnerMode="dialog"
-                    android:textAlignment="center" />
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -104,13 +79,13 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/downTextBox"
+                <Spinner
+                    android:id="@+id/spinner_secondConversion"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:textSize="16dp"
-                    android:text="@string/usd" />
+                    android:layout_height="match_parent"
+                    android:dropDownWidth="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/et_secondConversion"
@@ -119,12 +94,13 @@
                     android:background="@null"
                     android:clickable="false"
                     android:drawableEnd="@drawable/ic_enter_left"
-                    android:onClick="toastMessage"
                     android:editable="false"
                     android:ems="5"
                     android:focusable="false"
                     android:inputType="number"
-                    android:paddingStart="5dp" />
+                    android:onClick="toastMessage"
+                    android:paddingStart="5dp"
+                    android:textAlignment="center" />
 
             </LinearLayout>
 
