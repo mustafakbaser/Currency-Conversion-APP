@@ -12,7 +12,7 @@
 
 The currency conversion application was developed with Kotlin.
 
-Supported by API pulling current currency values.
+Supported by API pulling current currency data.
 
 It has support for 30+ currencies. Currency conversion application with instantly updated exchange rates!
 
