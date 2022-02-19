@@ -28,37 +28,37 @@ class DescriptionActivity : AppCompatActivity() {
         sifir.setOnClickListener { expression("0", true) }
         kusurat.setOnClickListener { expression(".", true) }
 
-        //Operators
+        //Operatorler
         toplama.setOnClickListener { expression("+", false) }
         cikarma.setOnClickListener { expression("-", false) }
         carpma.setOnClickListener { expression("*", false) }
-        tvDivide.setOnClickListener { expression("/", false) }
-        tvOpen.setOnClickListener { expression("(", false) }
-        tvClose.setOnClickListener { expression(")", false) }
+        bolme.setOnClickListener { expression("/", false) }
+        parantezAc.setOnClickListener { expression("(", false) }
+        parantezKapat.setOnClickListener { expression(")", false) }
 
-        tvClear.setOnClickListener {
-            tvExpression.text = ""
-            tvResult.text = ""
+        temizle.setOnClickListener {
+            expression.text = ""
+            sonuc.text = ""
         }
 
         sil.setOnClickListener {
-            val string = tvExpression.text.toString()
+            val string = expression.text.toString()
             if (string.isNotEmpty()) {
-                tvExpression.text = string.substring(0, string.length - 1)
+                expression.text = string.substring(0, string.length - 1)
             }
-            tvResult.text = ""
+            sonuc.text = ""
         }
 
         esittir.setOnClickListener {
             try {
 
-                val expression = ExpressionBuilder(tvExpression.text.toString()).build()
+                val expression = ExpressionBuilder(expression.text.toString()).build()
                 val result = expression.evaluate()
                 val longResult = result.toLong()
                 if (result == longResult.toDouble())
-                    tvResult.text = longResult.toString()
+                    sonuc.text = longResult.toString()
                 else
-                    tvResult.text = result.toString()
+                    sonuc.text = result.toString()
 
             } catch (e: Exception) {
                 Log.d("Exception", " message : " + e.message)
@@ -69,16 +69,16 @@ class DescriptionActivity : AppCompatActivity() {
 
     fun expression(string: String, canClear: Boolean) {
 
-        if (tvResult.text.isNotEmpty()) {
-            tvExpression.text = ""
+        if (sonuc.text.isNotEmpty()) {
+            expression.text = ""
         }
         if (canClear) {
-            tvResult.text = ""
-            tvExpression.append(string)
+            sonuc.text = ""
+            expression.append(string)
         } else {
-            tvExpression.append(tvResult.text)
-            tvExpression.append(string)
-            tvResult.text = ""
+            expression.append(sonuc.text)
+            expression.append(string)
+            sonuc.text = ""
         }
     }
 }

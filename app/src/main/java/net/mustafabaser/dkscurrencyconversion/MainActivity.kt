@@ -20,15 +20,11 @@ import org.json.JSONObject
 import java.net.URL
 import android.widget.ArrayAdapter
 
-
-
-
 class MainActivity : AppCompatActivity() {
 
     var baseCurrency = "EUR"
-    var convertedToCurrency = "USD"
+    var targetCurrency = "USD"
     var conversionRate = 0f
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun textChangedStuff() {
-        et_firstConversion.addTextChangedListener(object : TextWatcher {
+        amountOfFirstMoney.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
                 try {
                     getApiResult()
@@ -77,12 +73,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getApiResult() {
-        if (et_firstConversion != null && et_firstConversion.text.isNotEmpty() && et_firstConversion.text.isNotBlank()) {
+        if (amountOfFirstMoney != null && amountOfFirstMoney.text.isNotEmpty() && amountOfFirstMoney.text.isNotBlank()) {
             //API Document: https://www.frankfurter.app/docs/
             var API =
-                "https://api.frankfurter.app/latest?amount=1&from=$baseCurrency&to=$convertedToCurrency"
+                "https://api.frankfurter.app/latest?amount=1&from=$baseCurrency&to=$targetCurrency"
 
-            if (baseCurrency == convertedToCurrency) {
+            if (baseCurrency == targetCurrency) {
                 Toast.makeText(
                     applicationContext,
                     getString(R.string.PickACurrencyToConvert),
@@ -95,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                         val apiResult = URL(API).readText()
                         val jsonObject = JSONObject(apiResult)
                         conversionRate =
-                            jsonObject.getJSONObject("rates").getString(convertedToCurrency)
+                            jsonObject.getJSONObject("rates").getString(targetCurrency)
                                 .toFloat()
 
                         Log.d("Main", "$conversionRate")
@@ -103,12 +99,9 @@ class MainActivity : AppCompatActivity() {
 
                         withContext(Dispatchers.Main) {
                             val text =
-                                ((et_firstConversion.text.toString()
+                                ((amountOfFirstMoney.text.toString()
                                     .toFloat()) * conversionRate).toString()
-                            et_secondConversion?.setText(text)
-                            /* Spinnerda seçilen para birimini getirme
-                            upTextBox?.setText(baseCurrency)
-                            downTextBox?.setText(convertedToCurrency)*/
+                            amountOfConvertedMoney?.setText(text)
                         }
 
                     } catch (e: Exception) {
@@ -167,7 +160,7 @@ class MainActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                convertedToCurrency = parent?.getItemAtPosition(position).toString()
+                targetCurrency = parent?.getItemAtPosition(position).toString()
                 getApiResult()
             }
         })

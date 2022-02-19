@@ -15,7 +15,6 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
@@ -44,7 +43,7 @@
                     android:spinnerMode="dialog" />
 
                 <EditText
-                    android:id="@+id/et_firstConversion"
+                    android:id="@+id/amountOfFirstMoney"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="5"
@@ -88,7 +87,7 @@
                     android:textAlignment="center" />
 
                 <EditText
-                    android:id="@+id/et_secondConversion"
+                    android:id="@+id/amountOfConvertedMoney"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
@@ -106,9 +105,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
+                android:layout_height="30dp" />
 
 
             <View
@@ -135,341 +132,339 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
+                android:layout_height="20dp" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/euroTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eur_euro"
-                android:drawableLeft="@drawable/euro"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/euro" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/usdTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/usd_amerikan_dolar"
-                android:drawableLeft="@drawable/dolar"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/dolar" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tryTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/try_turkish_lira"
-                android:drawableLeft="@drawable/turkiye"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/turkiye" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/gbpTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gbp_sterlin"
-                android:drawableLeft="@drawable/sterlin"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/sterlin" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/jpyTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/jpy_japon_yeni"
-                android:drawableLeft="@drawable/japonya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/japonya" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/chfTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/chf_isvicre_frangi"
-                android:drawableLeft="@drawable/isvicre"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/isvicre" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/cnyTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cny_cin_yuani"
-                android:drawableLeft="@drawable/cin"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/cin" />
 
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/dkkTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/dkk_danimarka_kronu"
-                android:drawableLeft="@drawable/danimarka"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/danimarka" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/audTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/aud_avustralya_dolari"
-                android:drawableLeft="@drawable/avustralya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/avustralya" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/cadTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cad_kanada_dolari"
-                android:drawableLeft="@drawable/kanada"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/kanada" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/sekTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sek_isvec_kronu"
-                android:drawableLeft="@drawable/isvec"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/isvec" />
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/nokTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nok_norvec_kronu"
-                android:drawableLeft="@drawable/norvec"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/norvec" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/rubTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/rub_rus_rublesi"
-                android:drawableLeft="@drawable/rusya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/rusya" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/hkdTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/hkd_hong_kong_dolar"
-                android:drawableLeft="@drawable/honk_kong"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/honk_kong" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/idrTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/idr_endonezya_rupisi"
-                android:drawableLeft="@drawable/endonezya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/endonezya" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/ilsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ils_israil_yeni_sekeli"
-                android:drawableLeft="@drawable/israil"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/israil" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/inrTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/inr_hindistan_rupisi"
-                android:drawableLeft="@drawable/hindistan"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/hindistan" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/mxnTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mxn_meksika_pezosu"
-                android:drawableLeft="@drawable/meksika"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/meksika" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/czkTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/czk_cek_korunasi"
-                android:drawableLeft="@drawable/cek_cumhuriyeti"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/cek_cumhuriyeti" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/sgdTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sgd_singapur_dolari"
-                android:drawableLeft="@drawable/singapur"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/singapur" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/thbTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/thb_tayland_bahti"
-                android:drawableLeft="@drawable/tayland"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/tayland" />
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/hrkTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/hrk_hirvat_kunasi"
-                android:drawableLeft="@drawable/hindistan"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/hindistan" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/myrTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/myr_malezya_ringiti"
-                android:drawableLeft="@drawable/malezya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/malezya" />
 
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/bgnTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/bgn_bulgar_levasi"
-                android:drawableLeft="@drawable/bulgaristan"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/bulgaristan" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/phpTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/php_filipinler_pezosu"
-                android:drawableLeft="@drawable/filipinler"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/filipinler" />
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/plnTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pln_polonya_zlotisi"
-                android:drawableLeft="@drawable/polonya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/polonya" />
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/zarTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/zar_guney_afrika_randi"
-                android:drawableLeft="@drawable/guney_afrika"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/guney_afrika" />
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/iskTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/isk_izlanda_kronu"
-                android:drawableLeft="@drawable/izlanda"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/izlanda" />
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/brlTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/brl_brazilya_reali"
-                android:drawableLeft="@drawable/brezilya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/brezilya" />
 
             <TextView
-                android:id="@+id/textView33"
+                android:id="@+id/ronTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ron_romen_leyi"
-                android:drawableLeft="@drawable/romanya"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/romanya" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/nzdTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nzd_yeni_zelanda_dolari"
-                android:drawableLeft="@drawable/yeni_zelanda"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/yeni_zelanda" />
 
             <TextView
-                android:id="@+id/textView35"
+                android:id="@+id/krwTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/krw_guney_kore_wonu"
-                android:drawableLeft="@drawable/guney_kore"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#101010" />
+                android:textColor="#101010"
+                app:drawableLeftCompat="@drawable/guney_kore" />
 
             <TextView
-                android:id="@+id/textView36"
+                android:id="@+id/hufTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/huf_macar_forinti"
-                android:drawableLeft="@drawable/macaristan"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                app:drawableLeftCompat="@drawable/macaristan" />
         </LinearLayout>
 
         </LinearLayout>

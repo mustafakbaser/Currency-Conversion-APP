@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvExpression"
+        android:id="@+id/expression"
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:ellipsize="start"
@@ -17,7 +17,7 @@
         android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/sonuc"
         android:layout_width="match_parent"
         android:layout_height="100sp"
         android:ellipsize="end"
@@ -38,22 +38,22 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvClear"
+                android:id="@+id/temizle"
                 style="@style/ActionButtonStyle"
                 android:text="@string/hesapMakinesi_temizle" />
 
             <TextView
-                android:id="@+id/tvOpen"
+                android:id="@+id/parantezAc"
                 style="@style/ActionButtonStyle"
                 android:text="@string/hesapMakinesi_acParantez" />
 
             <TextView
-                android:id="@+id/tvClose"
+                android:id="@+id/parantezKapat"
                 style="@style/ActionButtonStyle"
                 android:text="@string/hesapMakinesi_kapaParantez" />
 
             <TextView
-                android:id="@+id/tvDivide"
+                android:id="@+id/bolme"
                 style="@style/ActionButtonStyle"
                 android:text="@string/hesapMakinesi_bolme" />
 
