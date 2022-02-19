@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_firstConversion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_firstConversion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:spinnerMode="dialog"
+                        android:autofillHints="Choose a Currency"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:id="@+id/paraBirimleri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paraBirimleri"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/euroTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eur_euro"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/euro" />
+
+                    <TextView
+                        android:id="@+id/usdTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/usd_amerikan_dolar"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/dolar" />
+
+                    <TextView
+                        android:id="@+id/tryTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/try_turkish_lira"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/turkiye" />
+
+                    <TextView
+                        android:id="@+id/gbpTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gbp_sterlin"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/sterlin" />
+
+                    <TextView
+                        android:id="@+id/jpyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jpy_japon_yeni"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/japonya" />
+
+                    <TextView
+                        android:id="@+id/chfTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chf_isvicre_frangi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/isvicre" />
+
+                    <TextView
+                        android:id="@+id/cnyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cny_cin_yuani"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/cin" />
+
+
+                    <TextView
+                        android:id="@+id/dkkTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dkk_danimarka_kronu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/danimarka" />
+
+                    <TextView
+                        android:id="@+id/audTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aud_avustralya_dolari"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/avustralya" />
+
+                    <TextView
+                        android:id="@+id/cadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cad_kanada_dolari"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/kanada" />
+
+                    <TextView
+                        android:id="@+id/sekTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sek_isvec_kronu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/isvec" />
+
+                    <TextView
+                        android:id="@+id/nokTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nok_norvec_kronu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/norvec" />
+
+                    <TextView
+                        android:id="@+id/rubTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rub_rus_rublesi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/rusya" />
+
+                    <TextView
+                        android:id="@+id/hkdTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hkd_hong_kong_dolar"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/honk_kong" />
+
+                    <TextView
+                        android:id="@+id/idrTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/idr_endonezya_rupisi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/endonezya" />
+
+                    <TextView
+                        android:id="@+id/ilsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ils_israil_yeni_sekeli"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/israil" />
+
+                    <TextView
+                        android:id="@+id/inrTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inr_hindistan_rupisi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/hindistan" />
+
+                    <TextView
+                        android:id="@+id/mxnTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mxn_meksika_pezosu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/meksika" />
+
+                    <TextView
+                        android:id="@+id/czkTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/czk_cek_korunasi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/cek_cumhuriyeti" />
+
+                    <TextView
+                        android:id="@+id/sgdTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sgd_singapur_dolari"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/singapur" />
+
+                    <TextView
+                        android:id="@+id/thbTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thb_tayland_bahti"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/tayland" />
+
+                    <TextView
+                        android:id="@+id/hrkTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hrk_hirvat_kunasi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/hindistan" />
+
+                    <TextView
+                        android:id="@+id/myrTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/myr_malezya_ringiti"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/malezya" />
+
+
+                    <TextView
+                        android:id="@+id/bgnTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bgn_bulgar_levasi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/bulgaristan" />
+
+                    <TextView
+                        android:id="@+id/phpTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/php_filipinler_pezosu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/filipinler" />
+
+                    <TextView
+                        android:id="@+id/plnTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pln_polonya_zlotisi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/polonya" />
+
+                    <TextView
+                        android:id="@+id/zarTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zar_guney_afrika_randi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/guney_afrika" />
+
+                    <TextView
+                        android:id="@+id/iskTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/isk_izlanda_kronu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/izlanda" />
+
+                    <TextView
+                        android:id="@+id/brlTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brl_brazilya_reali"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/brezilya" />
+
+                    <TextView
+                        android:id="@+id/ronTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ron_romen_leyi"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/romanya" />
+
+                    <TextView
+                        android:id="@+id/nzdTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nzd_yeni_zelanda_dolari"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/yeni_zelanda" />
+
+                    <TextView
+                        android:id="@+id/krwTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/krw_guney_kore_wonu"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#101010"
+                        app:drawableLeftCompat="@drawable/guney_kore" />
+
+                    <TextView
+                        android:id="@+id/hufTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/huf_macar_forinti"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        app:drawableLeftCompat="@drawable/macaristan" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
