@@ -76,7 +76,7 @@
                         android:layout_height="20dp" />
 
                     <TextView
-                        android:id="@+id/euroTextView"
+                        android:id="@+id/euroToCurrency"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/eur_euro"
@@ -86,7 +86,7 @@
                         app:drawableLeftCompat="@drawable/euro" />
 
                     <TextView
-                        android:id="@+id/usdTextView"
+                        android:id="@+id/usdToCurrency"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/usd_amerikan_dolar"
@@ -96,7 +96,7 @@
                         app:drawableLeftCompat="@drawable/dolar" />
 
                     <TextView
-                        android:id="@+id/tryTextView"
+                        android:id="@+id/tryToCurrency"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/try_turkish_lira"
@@ -106,7 +106,7 @@
                         app:drawableLeftCompat="@drawable/turkiye" />
 
                     <TextView
-                        android:id="@+id/gbpTextView"
+                        android:id="@+id/gbpToCurrency"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/gbp_sterlin"

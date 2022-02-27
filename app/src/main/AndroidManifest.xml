@@ -13,7 +13,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".CustomCurrency"
-            android:exported="false" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
