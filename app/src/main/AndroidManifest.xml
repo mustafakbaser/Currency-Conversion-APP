@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CustomCurrency"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
+            android:name=".CustomCurrency"/>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -30,5 +27,4 @@
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity" />
     </application>
-
 </manifest>
