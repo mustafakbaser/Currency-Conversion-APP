@@ -153,199 +153,230 @@ class MainActivity : AppCompatActivity() {
         targetCurrency = "EUR"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun usdSelected(view: View){
         targetCurrency = "USD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun trySelected(view: View){
         targetCurrency = "TRY"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun gbpSelected(view: View){
         targetCurrency = "GBP"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun jpySelected(view: View){
         targetCurrency = "JPY"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun chfSelected(view: View){
         targetCurrency = "CHF"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun cnySelected(view: View){
         targetCurrency = "CNY"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun dkkSelected(view: View){
         targetCurrency = "DKK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun audSelected(view: View){
         targetCurrency = "AUD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun cadSelected(view: View){
         targetCurrency = "CAD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun sekSelected(view: View){
         targetCurrency = "SEK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun nokSelected(view: View){
         targetCurrency = "NOK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun rubSelected(view: View){
         targetCurrency = "RUB"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun hkdSelected(view: View){
         targetCurrency = "HKD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun idrSelected(view: View){
         targetCurrency = "IDR"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun ilsSelected(view: View){
         targetCurrency = "ILS"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun inrSelected(view: View){
         targetCurrency = "INR"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun mxnSelected(view: View){
         targetCurrency = "MXN"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun czkSelected(view: View){
         targetCurrency = "CZK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun sgdSelected(view: View){
         targetCurrency = "SGD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun thbSelected(view: View){
         targetCurrency = "THB"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun hrkSelected(view: View){
         targetCurrency = "HRK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun myrSelected(view: View){
         targetCurrency = "MYR"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun bgnSelected(view: View){
         targetCurrency = "BGN"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun phpSelected(view: View){
         targetCurrency = "PHP"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun plnSelected(view: View){
         targetCurrency = "PLN"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun zarSelected(view: View){
         targetCurrency = "ZAR"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun iskSelected(view: View){
         targetCurrency = "ISK"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun brlSelected(view: View){
         targetCurrency = "BRL"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun ronSelected(view: View){
         targetCurrency = "RON"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun nzdSelected(view: View){
         targetCurrency = "NZD"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun krwSelected(view: View){
         targetCurrency = "KRW"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
 
     fun hufSelected(view: View){
         targetCurrency = "HUF"
         selectedCurrency.setText(targetCurrency)
         getApiResult()
+        scrollView.smoothScrollTo(0,0)
     }
-
-
 }

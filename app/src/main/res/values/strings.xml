@@ -62,6 +62,7 @@
     <string name="hesapMakinesi_kapaParantez">)</string>
     <string name="hesapMakinesi_acParantez">(</string>
     <string name="hesapMakinesi_temizle">CE</string>
+    <string name="CurrencyDetail">Dönüştürmek istediğiniz para birimine tıklayın</string>
 
     <string-array name="currencies">
         <item>EUR</item>

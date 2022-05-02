@@ -63,4 +63,5 @@
     <string name="hesapMakinesi_kapaParantez">(</string>
     <string name="hesapMakinesi_acParantez">)</string>
     <string name="hesapMakinesi_temizle">CE</string>
+    <string name="CurrencyDetail">Klicken Sie auf die Zielwährung, um sie umzurechnen</string>
 </resources>
