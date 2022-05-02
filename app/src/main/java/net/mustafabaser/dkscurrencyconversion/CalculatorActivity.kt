@@ -3,14 +3,14 @@ package net.mustafabaser.dkscurrencyconversion
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_description.*
+import kotlinx.android.synthetic.main.activity_calculator.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
 
-class DescriptionActivity : AppCompatActivity() {
+class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_description)
+        setContentView(R.layout.activity_calculator)
 
         supportActionBar!!.title = getString(R.string.hesapMakinesi)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)

@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DescriptionActivity"
+            android:name=".CalculatorActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity" />
     </application>

@@ -22,7 +22,7 @@
         app:cardCornerRadius="5dp">
 
         <LinearLayout
-            android:id="@+id/ll_parent"
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -31,7 +31,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/ll_firstConversion"
+                android:id="@+id/linearLayout_firstCurrency"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -41,18 +41,31 @@
                     android:id="@+id/spinner_firstConversion"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:spinnerMode="dialog" />
+                    android:spinnerMode="dialog"
+                    android:backgroundTint="#000000"/>
 
                 <EditText
                     android:id="@+id/amountOfFirstMoney"
-                    android:layout_width="match_parent"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:ems="5"
                     android:hint="@string/from"
                     android:inputType="number"
-                    android:background="@null"
                     android:textAlignment="center"
                     android:text="1"/>
+
+                <ImageButton
+                    android:id="@+id/questionMarkFirstAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/ic_help_24"
+                    app:tint="#000000"
+                    android:onClick="baseCurrencyDetails"/>
+
+
             </LinearLayout>
 
             <Space
@@ -73,7 +86,7 @@
                 android:layout_centerVertical="true" />
 
             <LinearLayout
-                android:id="@+id/ll_secondConversion"
+                android:id="@+id/linearLayout_fargetCurrency"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -100,10 +113,10 @@
                     android:editable="false"
                     android:ems="5"
                     android:focusable="false"
-                    android:inputType="number"
-                    android:onClick="toastMessage"
+                    android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:onClick="targetCurrencyDetails"/>
 
             </LinearLayout>
 

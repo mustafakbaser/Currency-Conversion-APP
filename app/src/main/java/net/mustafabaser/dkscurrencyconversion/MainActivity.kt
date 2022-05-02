@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_custom_currency.*
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
         if (id == R.id.descriptionButton) {
-            val intent = Intent(this, DescriptionActivity::class.java)
+            val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
             return true
         }
@@ -82,11 +82,7 @@ class MainActivity : AppCompatActivity() {
                 "https://api.frankfurter.app/latest?amount=1&from=$baseCurrency&to=$targetCurrency"
 
             if (baseCurrency == targetCurrency) {
-                Toast.makeText(
-                    applicationContext,
-                    getString(R.string.PickACurrencyToConvert),
-                    Toast.LENGTH_SHORT
-                ).show()
+                amountOfConvertedMoney?.setText("1.00")
             } else {
                 GlobalScope.launch(Dispatchers.IO) {
                     try {
@@ -141,12 +137,6 @@ class MainActivity : AppCompatActivity() {
                 getApiResult()
             }
         })
-    }
-
-
-    fun toastMessage(view: View) {
-        Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG)
-            .show()
     }
 
     fun euroSelected(view: View){
@@ -378,5 +368,21 @@ class MainActivity : AppCompatActivity() {
         selectedCurrency.setText(targetCurrency)
         getApiResult()
         scrollView.smoothScrollTo(0,0)
+    }
+
+    fun baseCurrencyDetails(view: View) {
+        Snackbar.make(
+            linearLayout,
+            getString(R.string.firstCurrencyDetails),
+            Snackbar.LENGTH_LONG
+        ).show()
+    }
+
+    fun targetCurrencyDetails(view: View) {
+        Snackbar.make(
+            linearLayout,
+            getString(R.string.targetCurrencyDetails),
+            Snackbar.LENGTH_LONG
+        ).show()
     }
 }

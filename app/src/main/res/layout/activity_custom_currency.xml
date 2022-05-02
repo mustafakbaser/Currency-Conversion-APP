@@ -21,7 +21,7 @@
             app:cardCornerRadius="5dp">
 
             <LinearLayout
-                android:id="@+id/ll_parent"
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/ll_firstConversion"
+                    android:id="@+id/linearLayout_firstCurrency"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"

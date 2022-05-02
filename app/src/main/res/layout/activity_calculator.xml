@@ -13,8 +13,8 @@
         android:ellipsize="start"
         android:gravity="end"
         android:singleLine="true"
-        android:textColor="@color/buttonNumbers"
-        android:textSize="40sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/sonuc"
@@ -23,8 +23,8 @@
         android:ellipsize="end"
         android:gravity="end"
         android:singleLine="true"
-        android:textColor="@color/buttonNumbers"
-        android:textSize="30sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -171,7 +171,6 @@
                 android:id="@+id/esittir"
                 style="@style/ActionButtonStyle"
                 android:text="@string/hesapMakinesi_esittir" />
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

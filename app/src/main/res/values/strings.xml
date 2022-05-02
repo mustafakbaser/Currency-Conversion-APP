@@ -63,6 +63,8 @@
     <string name="hesapMakinesi_acParantez">(</string>
     <string name="hesapMakinesi_temizle">CE</string>
     <string name="CurrencyDetail">Dönüştürmek istediğiniz para birimine tıklayın</string>
+    <string name="targetCurrencyDetails">İstediğiniz başka bir para birimi mi? Aşağıdan diğer hedef para birimini seçebilirsiniz.</string>
+    <string name="firstCurrencyDetails">Ana para birimini seçin ve dönüştürmek istediğiniz tutarı girin.</string>
 
     <string-array name="currencies">
         <item>EUR</item>

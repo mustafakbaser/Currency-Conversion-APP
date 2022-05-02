@@ -64,4 +64,6 @@
     <string name="hesapMakinesi_acParantez">)</string>
     <string name="hesapMakinesi_temizle">CE</string>
     <string name="CurrencyDetail">Haga clic en la moneda que desea convertir</string>
+    <string name="targetCurrencyDetails">¿Otra moneda que quieres? Puede seleccionar otra moneda de destino a continuación.</string>
+    <string name="firstCurrencyDetails">Seleccione la moneda base e ingrese la cantidad que desea convertir.</string>
 </resources>
