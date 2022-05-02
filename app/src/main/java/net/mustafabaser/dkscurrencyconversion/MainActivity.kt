@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_custom_currency.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -115,9 +116,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun spinnerSetup() {
-
         val spinner: Spinner = findViewById(R.id.spinner_firstConversion)
-        val spinner2: Spinner = findViewById(R.id.spinner_secondConversion)
 
         ArrayAdapter.createFromResource(
             this,
@@ -126,15 +125,6 @@ class MainActivity : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter = adapter
-        }
-
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.currencies2,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinner2.adapter = adapter
         }
 
         spinner.onItemSelectedListener = (object : OnItemSelectedListener {
@@ -151,25 +141,211 @@ class MainActivity : AppCompatActivity() {
                 getApiResult()
             }
         })
-
-        spinner2.onItemSelectedListener = (object : OnItemSelectedListener {
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                targetCurrency = parent?.getItemAtPosition(position).toString()
-                getApiResult()
-            }
-        })
     }
+
 
     fun toastMessage(view: View) {
         Toast.makeText(this@MainActivity, getString(R.string.resultCalculation), Toast.LENGTH_LONG)
             .show()
     }
+
+    fun euroSelected(view: View){
+        targetCurrency = "EUR"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun usdSelected(view: View){
+        targetCurrency = "USD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun trySelected(view: View){
+        targetCurrency = "TRY"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun gbpSelected(view: View){
+        targetCurrency = "GBP"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun jpySelected(view: View){
+        targetCurrency = "JPY"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun chfSelected(view: View){
+        targetCurrency = "CHF"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun cnySelected(view: View){
+        targetCurrency = "CNY"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun dkkSelected(view: View){
+        targetCurrency = "DKK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun audSelected(view: View){
+        targetCurrency = "AUD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun cadSelected(view: View){
+        targetCurrency = "CAD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun sekSelected(view: View){
+        targetCurrency = "SEK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun nokSelected(view: View){
+        targetCurrency = "NOK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun rubSelected(view: View){
+        targetCurrency = "RUB"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun hkdSelected(view: View){
+        targetCurrency = "HKD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun idrSelected(view: View){
+        targetCurrency = "IDR"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun ilsSelected(view: View){
+        targetCurrency = "ILS"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun inrSelected(view: View){
+        targetCurrency = "INR"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun mxnSelected(view: View){
+        targetCurrency = "MXN"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun czkSelected(view: View){
+        targetCurrency = "CZK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun sgdSelected(view: View){
+        targetCurrency = "SGD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun thbSelected(view: View){
+        targetCurrency = "THB"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun hrkSelected(view: View){
+        targetCurrency = "HRK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun myrSelected(view: View){
+        targetCurrency = "MYR"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun bgnSelected(view: View){
+        targetCurrency = "BGN"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun phpSelected(view: View){
+        targetCurrency = "PHP"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun plnSelected(view: View){
+        targetCurrency = "PLN"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun zarSelected(view: View){
+        targetCurrency = "ZAR"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun iskSelected(view: View){
+        targetCurrency = "ISK"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun brlSelected(view: View){
+        targetCurrency = "BRL"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun ronSelected(view: View){
+        targetCurrency = "RON"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun nzdSelected(view: View){
+        targetCurrency = "NZD"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun krwSelected(view: View){
+        targetCurrency = "KRW"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+    fun hufSelected(view: View){
+        targetCurrency = "HUF"
+        selectedCurrency.setText(targetCurrency)
+        getApiResult()
+    }
+
+
 }

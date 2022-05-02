@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="20dp">
@@ -50,8 +51,8 @@
                     android:hint="@string/from"
                     android:inputType="number"
                     android:background="@null"
-                    android:textAlignment="center" />
-
+                    android:textAlignment="center"
+                    android:text="1"/>
             </LinearLayout>
 
             <Space
@@ -78,13 +79,16 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Spinner
-                    android:id="@+id/spinner_secondConversion"
+                <TextView
+                    android:id="@+id/selectedCurrency"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:dropDownWidth="wrap_content"
-                    android:spinnerMode="dialog"
-                    android:textAlignment="center" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/usd"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"/>
 
                 <EditText
                     android:id="@+id/amountOfConvertedMoney"
@@ -142,7 +146,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/euro" />
+                app:drawableLeftCompat="@drawable/euro"
+                android:onClick="euroSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/usdTextView"
@@ -152,7 +158,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/dolar" />
+                app:drawableLeftCompat="@drawable/dolar"
+                android:onClick="usdSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/tryTextView"
@@ -162,7 +170,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/turkiye" />
+                app:drawableLeftCompat="@drawable/turkiye"
+                android:onClick="trySelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/gbpTextView"
@@ -172,7 +182,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/sterlin" />
+                app:drawableLeftCompat="@drawable/sterlin"
+                android:onClick="gbpSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/jpyTextView"
@@ -182,7 +194,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/japonya" />
+                app:drawableLeftCompat="@drawable/japonya"
+                android:onClick="jpySelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/chfTextView"
@@ -192,7 +206,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/isvicre" />
+                app:drawableLeftCompat="@drawable/isvicre"
+                android:onClick="chfSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/cnyTextView"
@@ -202,7 +218,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/cin" />
+                app:drawableLeftCompat="@drawable/cin"
+                android:onClick="cnySelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
 
             <TextView
@@ -213,7 +231,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/danimarka" />
+                app:drawableLeftCompat="@drawable/danimarka"
+                android:onClick="dkkSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/audTextView"
@@ -223,7 +243,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/avustralya" />
+                app:drawableLeftCompat="@drawable/avustralya"
+                android:onClick="audSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/cadTextView"
@@ -233,7 +255,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/kanada" />
+                app:drawableLeftCompat="@drawable/kanada"
+                android:onClick="cadSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/sekTextView"
@@ -243,7 +267,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/isvec" />
+                app:drawableLeftCompat="@drawable/isvec"
+                android:onClick="sekSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/nokTextView"
@@ -253,7 +279,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/norvec" />
+                app:drawableLeftCompat="@drawable/norvec"
+                android:onClick="nokSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/rubTextView"
@@ -263,7 +291,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/rusya" />
+                app:drawableLeftCompat="@drawable/rusya"
+                android:onClick="rubSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/hkdTextView"
@@ -273,7 +303,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/honk_kong" />
+                app:drawableLeftCompat="@drawable/honk_kong"
+                android:onClick="hkdSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/idrTextView"
@@ -283,7 +315,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/endonezya" />
+                app:drawableLeftCompat="@drawable/endonezya"
+                android:onClick="idrSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/ilsTextView"
@@ -293,7 +327,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/israil" />
+                app:drawableLeftCompat="@drawable/israil"
+                android:onClick="ilsSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/inrTextView"
@@ -303,7 +339,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/hindistan" />
+                app:drawableLeftCompat="@drawable/hindistan"
+                android:onClick="inrSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/mxnTextView"
@@ -313,7 +351,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/meksika" />
+                app:drawableLeftCompat="@drawable/meksika"
+                android:onClick="mxnSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/czkTextView"
@@ -323,7 +363,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/cek_cumhuriyeti" />
+                app:drawableLeftCompat="@drawable/cek_cumhuriyeti"
+                android:onClick="czkSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/sgdTextView"
@@ -333,7 +375,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/singapur" />
+                app:drawableLeftCompat="@drawable/singapur"
+                android:onClick="sgdSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/thbTextView"
@@ -343,7 +387,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/tayland" />
+                app:drawableLeftCompat="@drawable/tayland"
+                android:onClick="thbSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/hrkTextView"
@@ -353,7 +399,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/hindistan" />
+                app:drawableLeftCompat="@drawable/hirvatistan"
+                android:onClick="hrkSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/myrTextView"
@@ -363,7 +411,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/malezya" />
+                app:drawableLeftCompat="@drawable/malezya"
+                android:onClick="myrSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
 
             <TextView
@@ -374,7 +424,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/bulgaristan" />
+                app:drawableLeftCompat="@drawable/bulgaristan"
+                android:onClick="bgnSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/phpTextView"
@@ -384,7 +436,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/filipinler" />
+                app:drawableLeftCompat="@drawable/filipinler"
+                android:onClick="phpSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/plnTextView"
@@ -394,7 +448,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/polonya" />
+                app:drawableLeftCompat="@drawable/polonya"
+                android:onClick="plnSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/zarTextView"
@@ -404,7 +460,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/guney_afrika" />
+                app:drawableLeftCompat="@drawable/guney_afrika"
+                android:onClick="zarSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/iskTextView"
@@ -414,7 +472,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/izlanda" />
+                app:drawableLeftCompat="@drawable/izlanda"
+                android:onClick="iskSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/brlTextView"
@@ -424,7 +484,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/brezilya" />
+                app:drawableLeftCompat="@drawable/brezilya"
+                android:onClick="brlSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/ronTextView"
@@ -434,7 +496,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/romanya" />
+                app:drawableLeftCompat="@drawable/romanya"
+                android:onClick="ronSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/nzdTextView"
@@ -444,7 +508,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/yeni_zelanda" />
+                app:drawableLeftCompat="@drawable/yeni_zelanda"
+                android:onClick="nzdSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/krwTextView"
@@ -454,7 +520,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#101010"
-                app:drawableLeftCompat="@drawable/guney_kore" />
+                app:drawableLeftCompat="@drawable/guney_kore"
+                android:onClick="krwSelected"
+                android:background="?android:attr/selectableItemBackground"/>
 
             <TextView
                 android:id="@+id/hufTextView"
@@ -464,7 +532,9 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="#000000"
-                app:drawableLeftCompat="@drawable/macaristan" />
+                app:drawableLeftCompat="@drawable/macaristan"
+                android:onClick="hufSelected"
+                android:background="?android:attr/selectableItemBackground"/>
         </LinearLayout>
 
         </LinearLayout>
@@ -472,6 +542,5 @@
     </androidx.cardview.widget.CardView>
 
     </ScrollView>
-
 
 </RelativeLayout>
